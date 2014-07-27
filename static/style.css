@@ -1,5 +1,14 @@
 body {
     background-color: #E7E7E7;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', cursive;
 }
 
 header {
@@ -7,12 +16,59 @@ header {
     text-align: center;
 }
 
-header .logo {
+header .logo h1 {
 
+    font-size: 50px;
+    /* font-family: 'IM Fell English', serif; */
 }
 
+header .logo h2 {
+    font-size: 25px;
+}
+
+header .navigation li a {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    color: white !important;
+}
+
+header .navigation li.about a {
+    background-color: #4E86CB;
+}
+
+header .navigation li.about a:hover {
+    background-color: #4678B7;
+}
+
+header .navigation li.gallery a {
+    background-color: #8E9CCF;
+}
+
+header .navigation li.gallery a:hover {
+    background-color: #808CBA;
+}
+
+header .navigation li.recipes a {
+    background-color: #00B6CF;
+}
+
+header .navigation li.recipes a:hover {
+    background-color: #00A4BA;
+}
+
+header .navigation li.contact a {
+    background-color: #7B8BC7;
+}
+
+header .navigation li.contact a:hover {
+    background-color: #6F7DB3;
+}
+
+
+
+
 header .divider-row {
-    margin: 20px 0;
+    margin: 10px 0;
     border-bottom: 1px dashed blue;
 }
 

@@ -1,0 +1,12 @@
+#header {
+    text-align: center;
+}
+
+#header .logo {
+
+}
+
+#header .divider-row {
+    margin: 20px 0;
+    border-bottom: 1px dashed blue;
+}

@@ -1,12 +1,39 @@
-#header {
+body {
+    background-color: #E7E7E7;
+}
+
+header {
+    background: white;
     text-align: center;
 }
 
-#header .logo {
+header .logo {
 
 }
 
-#header .divider-row {
+header .divider-row {
     margin: 20px 0;
     border-bottom: 1px dashed blue;
+}
+
+main {
+    background: white;
+}
+
+footer {
+    border-top: 1px dashed black;
+    padding-top: 10px;
+    text-align: center;
+}
+footer {
+    line-height: 30px;
+}
+
+footer .social {
+    margin-left: 10px;
+}
+
+footer .symbol {
+    font-size: 30px;
+    vertical-align: middle;
 }

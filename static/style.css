@@ -1,3 +1,5 @@
+/* General */
+
 body {
     background-color: #E7E7E7;
     font-family: 'Lato', sans-serif;
@@ -10,6 +12,8 @@ h1 {
 h2 {
     font-family: 'Cinzel Decorative', cursive;
 }
+
+/* HEADER */
 
 header {
     background: white;
@@ -64,17 +68,19 @@ header .navigation li.contact a:hover {
     background-color: #6F7DB3;
 }
 
-
-
-
 header .divider-row {
     margin: 10px 0;
     border-bottom: 1px dashed blue;
 }
 
+
+/* MAIN */
+
 main {
     background: white;
 }
+
+/* FOOTER */
 
 footer {
     border-top: 1px dashed black;
@@ -87,6 +93,14 @@ footer {
 
 footer .social {
     margin-left: 10px;
+}
+
+footer .social a {
+    color: grey;
+}
+
+footer .social a:hover {
+    color: black;
 }
 
 footer .symbol {

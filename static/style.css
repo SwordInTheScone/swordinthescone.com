@@ -106,4 +106,5 @@ footer .social a:hover {
 footer .symbol {
     font-size: 30px;
     vertical-align: middle;
+    text-decoration: none !important;
 }

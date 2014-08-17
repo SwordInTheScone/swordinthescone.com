@@ -33,7 +33,7 @@ header .logo h2 {
 header .navigation li a {
     font-family: 'Cinzel Decorative', cursive;
     font-weight: 700;
-    color: white !important;
+    color: black !important;
 }
 
 header .navigation li.about a {
@@ -68,9 +68,17 @@ header .navigation li.contact a:hover {
     background-color: #6F7DB3;
 }
 
+<<<<<<< HEAD
+=======
+
+/* Headers / sidebar border: 1E22AA (blue) */
+/* Main text / navigation / borders : 73796F (grey) */
+
+
+>>>>>>> FETCH_HEAD
 header .divider-row {
     margin: 10px 0;
-    border-bottom: 1px dashed blue;
+    border-bottom: 1px dashed ;
 }
 
 

@@ -1,7 +1,13 @@
 ---
 title: Chocolate Chip Cookies
 image: "/static/chocochip.jpg"
-thumbnail: "/static/chocochip_thumb.jpg"
+
+blurb: |
+  words
+  words
+
+  more words
+
 ingredients:
  - "&frac12; lb European-style salted butter, softened"
  - "&frac14; c. Muscovado sugar, packed"
@@ -14,6 +20,7 @@ ingredients:
  - "1 tsp Baking soda"
  - "2&frac14; c. semi or bittersweet chocolate chips, preferably a mix of sizes."
 ---
+{{page.blurb | markdownify}}
 Cream softened butter with a wooden spoon until it's smooth and a little
 airy. Add the granulated sugar, brown sugar and salt. Pass the Muscovado sugar
 through a fine sieve and add it to the bowl with butter and sugar. Cream

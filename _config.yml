@@ -1,12 +1,3 @@
 source:      .
 destination: ./_site
 layouts:     ./_layouts
-
-permalink: pretty
-encoding: utf-8
-
-defaults:
-  - scope:
-      path: recipes
-    values:
-      layout: recipe

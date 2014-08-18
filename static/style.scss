@@ -2,98 +2,172 @@
 ---
 body {
     background-color: #E7E7E7;
-    font-family: 'Lato', sans-serif;
 }
 
-h1 {
-    font-family: 'IM Fell French Canon SC', serif;
-}
+$textGrey: #73796F;
+$headingColor: #3E4D96;  // or #1E22AA;
 
-h2 {
-    font-family: 'Cinzel Decorative', cursive;
+@mixin heading {
+    font-family: "Lato";
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
 }
 
 header {
     background: white;
     text-align: center;
+
+    h1 {
+        font-size: 45px;
+        font-family: "albrechtregular";
+        font-weight: bold;
+
+        a { color: black; }
+        a:hover { color: black; text-decoration: none; }
+
+        .cap {
+            font-size: 55px;
+        }
+    }
+
+    h2 {
+        @include heading;
+        color: $textGrey;
+        font-size: 23px;
+        letter-spacing: 0.4em;
+    }
+
+    .divider-row {
+        margin: 10px 0;
+        border-bottom: 1px dotted $textGrey;
+    }
+
+    .navigation {
+        @include heading;
+        a { color: $textGrey; }
+    }
 }
 
-header .logo h1 {
+.heading {
+    padding: 10px 0;
+    text-align: center;
+    table {
+        @include heading;
+        margin: auto;
+        color: $headingColor;
 
-    font-size: 50px;
-    /* font-family: 'IM Fell English', serif; */
+        td {
+            vertical-align: middle;
+            font-size: 30px;
+        }
+
+        .bracket {
+            font-size: 50px;
+        }
+    }
 }
 
-header .logo h2 {
-    font-size: 25px;
+main {
+    h1 {
+        @include heading;
+
+        text-align: center;
+        color: $headingColor;
+    }
 }
 
-header .navigation li a {
-    font-family: 'Cinzel Decorative', cursive;
-    font-weight: 700;
-    color: black !important;
-}
+/* h1 { */
+/*     font-family: 'IM Fell French Canon SC', serif; */
+/* } */
 
-header .navigation li.about a {
-    background-color: #4E86CB;
-}
+/* h2 { */
+/*     font-family: 'Cinzel Decorative', cursive; */
+/* } */
 
-header .navigation li.about a:hover {
-    background-color: #4678B7;
-}
+/* header { */
+/* } */
 
-header .navigation li.gallery a {
-    background-color: #8E9CCF;
-}
+/* header .logo h1 { */
 
-header .navigation li.gallery a:hover {
-    background-color: #808CBA;
-}
+/*     font-size: 50px; */
+/*     /\* font-family: 'IM Fell English', serif; *\/ */
+/* } */
 
-header .navigation li.recipes a {
-    background-color: #00B6CF;
-}
+/* header .logo h2 { */
+/*     font-size: 25px; */
+/* } */
 
-header .navigation li.recipes a:hover {
-    background-color: #00A4BA;
-}
+/* header .navigation li a { */
+/*     font-family: 'Cinzel Decorative', cursive; */
+/*     font-weight: 700; */
+/*     color: black !important; */
+/* } */
 
-header .navigation li.contact a {
-    background-color: #7B8BC7;
-}
+/* header .navigation li.about a { */
+/*     background-color: #4E86CB; */
+/* } */
 
-header .navigation li.contact a:hover {
-    background-color: #6F7DB3;
-}
+/* header .navigation li.about a:hover { */
+/*     background-color: #4678B7; */
+/* } */
+
+/* header .navigation li.gallery a { */
+/*     background-color: #8E9CCF; */
+/* } */
+
+/* header .navigation li.gallery a:hover { */
+/*     background-color: #808CBA; */
+/* } */
+
+/* header .navigation li.recipes a { */
+/*     background-color: #00B6CF; */
+/* } */
+
+/* header .navigation li.recipes a:hover { */
+/*     background-color: #00A4BA; */
+/* } */
+
+/* header .navigation li.contact a { */
+/*     background-color: #7B8BC7; */
+/* } */
+
+/* header .navigation li.contact a:hover { */
+/*     background-color: #6F7DB3; */
+/* } */
 
 
-/* Headers / sidebar border: 1E22AA (blue) */
-/* Main text / navigation / borders : 73796F (grey) */
+/* /\* Headers / sidebar border: 1E22AA (blue) *\/ */
+/* /\* Main text / navigation / borders : 73796F (grey) *\/ */
 
-
-header .divider-row {
-    margin: 10px 0;
-    border-bottom: 1px dashed ;
-}
 
 main {
     background: white;
 }
 
 footer {
+    line-height: 30px;
     border-top: 1px dashed black;
     padding-top: 10px;
     text-align: center;
-}
-footer {
-    line-height: 30px;
-}
 
-footer .social {
-    margin-left: 10px;
-}
+    font-family: lato;
 
-footer .symbol {
-    font-size: 30px;
-    vertical-align: middle;
+    span {
+        white-space: nowrap;
+        margin: 0 5px;
+    }
+
+    .brand {
+        @include heading;
+    }
+
+    .symbol {
+        font-size: 30px;
+        vertical-align: middle;
+        margin: 0;
+
+        a { color: $textGrey; }
+        a:hover { color: black; text-decoration: none; }
+    }
 }

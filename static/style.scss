@@ -77,6 +77,7 @@ main {
     }
 }
 
+
 main#home {
     #carousel {
         max-width: 900px;
@@ -150,6 +151,10 @@ main#home {
 
 main {
     background: white;
+}
+
+.lt-ie10 main {
+    background: purple;
 }
 
 footer {

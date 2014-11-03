@@ -1,9 +1,35 @@
 ---
+layout: default
+title: Recipes - The Sword in the Scone
 ---
-Check the recipes yo
+<main id="recipes">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <h1>Recipes</h1>
+        <div class="recipes">
+        {% for recipe in site.categories.recipes %}
+        {% for num in (1...5) %}
+          <a href="{{recipe.url}}">
+            <div class="recipe">
+              <img src="/images/{{recipe.thumbnail}}">
+              <div class="label">{{recipe.name}}</div>
+            </div>
+          </a>
+        {% endfor %}
+        {% endfor %}
+        </div>
+      </div>
+      <div class="sidebar col-sm-3 hidden-xs">
+        <h1>Yo</h1>
+      </div>
+    </div>
+  Check the recipes yo
 
-<ul>
-{% for recipe in site.categories.recipes %}
-<li><a href="{{recipe.url}}">{{recipe.title}}</a></li>
-{% endfor %}
-</ul>
+  <ul>
+  {% for recipe in site.categories.recipes %}
+    <li><a href="{{recipe.url}}">{{recipe.title}}</a></li>
+  {% endfor %}
+  </ul>
+  </div>
+</main>

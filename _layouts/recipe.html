@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+{% include html_open.html %}
   <head>
     {% include head.html %}
-    <title>{{page.title}}</title>
+    <title>{{page.name}} - The Sword in the Scone</title>
   </head>
 
   <body>
@@ -10,48 +10,24 @@
     {% include header.html %}
     <main>
       <div class="container">
-        <h1>{{page.title}}</h1>
         <div class="row">
-          <div class="col-md-9">
-            <div class="row">
-              <div class="col-lg-8">
-                <img src="{{site.url}}{{page.image}}"
-                     class="img-responsive img-thumbnail">
-              </div>
-              <div class="col-lg-4">
-                <div class="well">
-                  <ul>
-                    {% for ingredient in page.ingredients %}
-                    <li>{{ingredient}}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">{{content}}</div>
-            </div>
+          <div {% if page.sidebar %} class="col-sm-9" {% endif %}>
+        		<h1>{{page.name}}</h1>
+						{% if page.images %}
+              {% if page.images.size == 1 %}
+            		<img src="/images/{{page.images[0]}}"
+                	class="img-responsive img-thumbnail">
+              {% else %}
+              	Plural
+              {% endif %}
+            {% endif %}
+            <div class="recipe">{{content}}</div>
           </div>
-          <div class="col-md-3">
-            Artisan flexitarian food truck, drinking vinegar ennui selfies
-            ethical readymade vinyl. High Life messenger bag polaroid tattooed
-            occupy. Godard next level viral post-ironic photo booth. Chia occupy
-            Austin polaroid. Direct trade shabby chic try-hard, slow-carb fanny
-            pack seitan next level whatever dreamcatcher YOLO. Slow-carb
-            biodiesel tofu Carles. Pop-up drinking vinegar normcore, keffiyeh
-            farm-to-table bespoke letterpress single-origin coffee bicycle
-            rights occupy umami YOLO brunch pork belly Tumblr.
-
-            Etsy distillery direct trade Portland squid mixtape. Lomo bicycle
-            rights twee, +1 art party authentic scenester Tonx fashion axe
-            mumblecore Neutra ethical fanny pack artisan. Kitsch Carles polaroid
-            Echo Park. Beard tousled fashion axe DIY 8-bit, Wes Anderson
-            locavore irony Shoreditch. Echo Park High Life Thundercats vinyl
-            fanny pack. Banh mi quinoa mixtape, swag bicycle rights slow-carb
-            sartorial shabby chic kitsch Cosby sweater direct trade blog
-            cornhole. Ethical forage bespoke, organic iPhone raw denim cliche
-            blog.
-          </div>
+					{% if page.sidebar %}
+						<div class="col-sm-3 hidden-xs sidebar">
+							{{page.sidebar | markdownify}}
+						</div>
+					{% endif %}
         </div>
       </div>
     </main>

@@ -61,6 +61,13 @@ header {
     }
 }
 
+h1.img-header {
+  margin: 15px auto;
+  padding: 200px 0 15px 0;
+  background-size: cover;
+  background-position: bottom;
+}
+
 main {
     background: white;
     font-family: lato;
@@ -128,18 +135,22 @@ main#recipes .recipes {
 
 main#contact {
   h1 {
-    margin: 15px auto;
-
-    max-width: 698px;
     background-image: url('/images/colorful_tins.jpg');
-    padding: 250px 0 15px 0;
-    background-size: cover;
-    background-position: bottom;
-
     color: white;
   }
 }
 
+main#siteinfo {
+  h1 {
+    background-image: url('/images/cables.jpg');
+    color: white;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+  }
+}
 /* h1 { */
 /*     font-family: 'IM Fell French Canon SC', serif; */
 /* } */
@@ -228,6 +239,10 @@ footer {
 
         a { color: $textGrey; }
         a:hover { color: black; text-decoration: none; }
+    }
+
+    .footnote {
+      font-size: 12px;
     }
 }
 

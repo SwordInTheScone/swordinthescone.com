@@ -6,16 +6,18 @@ id: siteinfo
 {:.img-header}
 # About the Site
 
+Site design by Jeannette and [Nina Ovryn](http://ninaovryndesign.com/).
+
+Thanks to Natania and Josh for their help with editing and photography,
+respectively.
+
 Site coding by [Hunter Freyer](http://hjfreyer.com). [Email the Webmaster](mailto:webmaster@swordinthescone.com).
 
 Built using [Bootstrap](http://getbootstrap.com), [Jekyll](http://jekyllrb.com),
 and [GitHub Pages](http://pages.github.com).
 [Source code is available](https://github.com/SwordInTheScone/swordinthescone.com).
-
 Logo font is [Albrecht](http://www.dafont.com/albrecht.font), created by [Henry
-Cohn](mailto:cohnin5@gmail.com). Used with permission.
-
-Social icons courtesy of [Mono Social Icons](http://drinchev.github.io/monosocialiconsfont/).
+Cohn](mailto:cohnin5@gmail.com). Used with permission. Social icons courtesy of [Mono Social Icons](http://drinchev.github.io/monosocialiconsfont/).
 
 The lovely mess of cables above is owned by
 [Jerry John](https://www.flickr.com/photos/jerryjohn/63351338/).

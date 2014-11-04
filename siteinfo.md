@@ -8,7 +8,7 @@ id: siteinfo
 
 Site design by Jeannette and [Nina Ovryn](http://ninaovryndesign.com/).
 
-Thanks to Natania and Josh for their help with editing and photography,
+Thanks to Josh Schwartz and Natania for their help with photography and editing,
 respectively.
 
 Site coding by [Hunter Freyer](http://hjfreyer.com). [Email the Webmaster](mailto:webmaster@swordinthescone.com).

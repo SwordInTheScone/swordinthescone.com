@@ -62,29 +62,31 @@ header {
 }
 
 h1.img-header {
-  margin: 15px auto;
+  margin: 15px auto 30px auto;
   padding: 200px 0 15px 0;
   background-size: cover;
   background-position: bottom;
 }
 
 main {
-    background: white;
-    font-family: lato;
-    font-size: 18px;
+  background: white;
+  font-family: lato;
+  font-size: 18px;
 
-    h1 {
-        @include heading;
-        font-size: 30px;
-        color: $headingColor;
-        text-align: center;
-    }
+  padding-bottom: 150px;
 
-    h2 {
+  h1 {
       @include heading;
+      font-size: 30px;
       color: $headingColor;
-      font-size: 20px;
-    }
+      text-align: center;
+  }
+
+  h2 {
+    @include heading;
+    color: $headingColor;
+    font-size: 20px;
+  }
 }
 
 main#home {
